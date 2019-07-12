@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">作业系统</string>
+    <string name="on_line_work">在线作业</string>
+    <string name="arrange_work">布置作业</string>
+    <string name="more">更多</string>
+    <string name="work_name">作业名称</string>
+    <string name="deadline">截止时间</string>
+    <string name="classes">班级</string>
+    <string name="correctness_rate">正确率</string>
+    <string name="answer_card">答题卡</string>
+    <string name="cloud_question_bank">云题库</string>
+    <string name="school_based_question_bank">校本题库</string>
+    <string name="my_question_bank">我的题库</string>
+    <string name="error_question_bank">错题库</string>
+    <string name="chapter">章节</string>
+    <string name="examination_point">考点</string>
+    <string name="coiling">套卷</string>
+    <string name="empty">清空</string>
+    <string name="work_preview">作业预览</string>
+    <string name="question_type">题型</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="test_question1">下列加点的字注音有错误的一项是（  ）\n A．庶人（shù）  百乘（chéng） 弑君（shì）  工倕（chuí）\n B．胠箧（qū qiè） 缄縢（jiān téng） 罔罟（gǔ）  爚乱（yuè）\n C．耒耨（nòu）  掊击（pǒu）  斗斛（hú）  瞽旷（gǔ）\n D．斧钺（yuè）   擿玉（zhì）  擢乱（zhuó）     轩冕（miǎn）</string>
+</resources>

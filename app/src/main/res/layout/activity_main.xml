@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aty.MainActivity">
+
+    <!-- 底部菜单栏 -->
+
+    <LinearLayout
+        android:id="@+id/ll_wrapper_bottom_bar_layout_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <!-- 在线作业 -->
+
+        <LinearLayout
+            android:id="@+id/ll_wrapper_online_work_layout_activity_main"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_online_work_layout_activity_main"
+                android:layout_width="@dimen/dp_010"
+                android:layout_height="@dimen/dp_010"
+                android:layout_marginTop="@dimen/dp_006"
+                android:background="@drawable/work_p"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_online_work_layout_activity_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_002"
+                android:layout_marginBottom="@dimen/dp_006"
+                android:clickable="false"
+                android:text="在线作业"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_005" />
+        </LinearLayout>
+
+
+        <!-- 班级错题 -->
+
+        <LinearLayout
+            android:id="@+id/ll_wrapper_class_error_question_layout_activity_main"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_class_error_question_layout_activity_main"
+                android:layout_width="@dimen/dp_010"
+                android:layout_height="@dimen/dp_010"
+                android:layout_marginTop="@dimen/dp_006"
+                android:background="@drawable/error_question_n"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_class_error_question_layout_activity_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_002"
+                android:layout_marginBottom="@dimen/dp_006"
+                android:clickable="false"
+                android:text="班级错题"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_005" />
+        </LinearLayout>
+
+
+        <!-- 数据分析 -->
+
+        <LinearLayout
+            android:id="@+id/ll_wrapper_data_analysis_layout_activity_main"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_data_analysis_exercises_layout_activity_main"
+                android:layout_width="@dimen/dp_010"
+                android:layout_height="@dimen/dp_010"
+                android:layout_marginTop="@dimen/dp_006"
+                android:background="@drawable/data_analysis_n"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_data_analysis_layout_activity_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_002"
+                android:layout_marginBottom="@dimen/dp_006"
+                android:clickable="false"
+                android:text="数据分析"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_005" />
+        </LinearLayout>
+
+        <!-- 试题篮 -->
+
+        <LinearLayout
+            android:id="@+id/ll_wrapper_question_basket_layout_activity_main"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_question_basket_layout_activity_main"
+                android:layout_width="@dimen/dp_010"
+                android:layout_height="@dimen/dp_010"
+                android:layout_marginTop="@dimen/dp_006"
+                android:background="@drawable/question_basket_n"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_question_basket_layout_activity_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_002"
+                android:layout_marginBottom="@dimen/dp_006"
+                android:clickable="false"
+                android:text="试题篮"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_005" />
+        </LinearLayout>
+
+        <!-- 个人中心 -->
+
+        <LinearLayout
+            android:id="@+id/ll_wrapper_personal_center_layout_activity_main"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_personal_center_layout_activity_main"
+                android:layout_width="@dimen/dp_010"
+                android:layout_height="@dimen/dp_010"
+                android:layout_marginTop="@dimen/dp_006"
+                android:background="@drawable/personal_center_n"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_personal_center_layout_activity_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_002"
+                android:layout_marginBottom="@dimen/dp_006"
+                android:clickable="false"
+                android:text="个人中心"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_005" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 隔离线 -->
+
+    <TextView
+        android:id="@+id/tv_line01_layout_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_wrapper_bottom_bar_layout_activity_main"
+        android:background="@color/grey01" />
+
+    <!--页卡内容 -->
+    <com.example.worktmp.view.CustomViewpager
+        android:id="@+id/vp_content_layout_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_line01_layout_activity_main"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

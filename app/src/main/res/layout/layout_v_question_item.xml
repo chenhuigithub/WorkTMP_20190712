@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_for_dialog_bg01"
+    android:clickable="false"
+    android:orientation="vertical"
+    tools:context=".aty.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title_layout_v_question_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_006"
+        android:text="@string/test_question1"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/sp_008" />
+
+
+    <com.example.worktmp.view.CustomExpandListView
+        android:id="@+id/lv_question_aty_question_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_002"
+        android:background="@android:color/white"
+        android:divider="@color/bg02"
+        android:dividerHeight="@dimen/dp_001" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_menu_layout_v_question_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg06"
+        android:clickable="false"
+        android:padding="@dimen/dp_006">
+
+        <TextView
+            android:id="@+id/tv_add_or_remove_type_layout_v_question_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_for_orange_stroke_white_solid_corner"
+            android:paddingLeft="@dimen/dp_009"
+            android:paddingTop="@dimen/dp_004"
+            android:paddingRight="@dimen/dp_009"
+            android:clickable="true"
+            android:paddingBottom="@dimen/dp_004"
+            android:text="添加"
+            android:textColor="@color/orange01"
+            android:textSize="@dimen/sp_007" />
+
+        <TextView
+            android:id="@+id/tv_type_layout_v_question_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="题型：填空题"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_006" />
+
+
+        <View
+            android:id="@+id/v_line01_layout_v_question_item"
+            android:layout_width="@dimen/dp_001"
+            android:layout_height="@dimen/dp_008"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:layout_toRightOf="@id/tv_type_layout_v_question_item"
+            android:background="@color/color_text_additional" />
+
+        <TextView
+            android:id="@+id/tv_difficulty_layout_v_question_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:layout_toRightOf="@id/v_line01_layout_v_question_item"
+            android:text="难度：中档题"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_006" />
+
+
+        <View
+            android:id="@+id/v_line02_layout_v_question_item"
+            android:layout_width="@dimen/dp_001"
+            android:layout_height="@dimen/dp_008"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:layout_toRightOf="@id/tv_difficulty_layout_v_question_item"
+            android:background="@color/color_text_additional" />
+
+
+        <TextView
+            android:id="@+id/tv_occurrence_num_layout_v_question_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:layout_toRightOf="@id/v_line02_layout_v_question_item"
+            android:text="出过 1 次"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_006" />
+
+    </RelativeLayout>
+</LinearLayout>

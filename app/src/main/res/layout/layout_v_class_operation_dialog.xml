@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_for_dialog_bg01"
+    android:clickable="false"
+    android:orientation="vertical"
+    tools:context=".aty.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_edit_layout_v_class_operation_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2.5"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_010"
+        android:paddingTop="@dimen/dp_005"
+        android:paddingRight="@dimen/dp_010"
+        android:paddingBottom="@dimen/dp_005"
+        android:text="编辑"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/sp_006" />
+
+    <include layout="@layout/layout_in_dividing_line"></include>
+
+    <TextView
+        android:id="@+id/tv_publish_layout_v_class_operation_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2.5"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_010"
+        android:paddingTop="@dimen/dp_005"
+        android:paddingRight="@dimen/dp_010"
+        android:paddingBottom="@dimen/dp_005"
+        android:text="发布"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/sp_006" />
+
+    <include layout="@layout/layout_in_dividing_line"></include>
+
+    <TextView
+        android:id="@+id/tv_delete_layout_v_class_operation_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2.5"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_010"
+        android:paddingTop="@dimen/dp_005"
+        android:paddingRight="@dimen/dp_010"
+        android:paddingBottom="@dimen/dp_005"
+        android:text="删除"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/sp_006" />
+
+    <include layout="@layout/layout_in_dividing_line"></include>
+
+    <TextView
+        android:id="@+id/tv_one_click_acceleration_layout_v_class_operation_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2.5"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_010"
+        android:paddingTop="@dimen/dp_005"
+        android:paddingRight="@dimen/dp_010"
+        android:paddingBottom="@dimen/dp_005"
+        android:text="一键催交"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/sp_006" />
+
+</LinearLayout>

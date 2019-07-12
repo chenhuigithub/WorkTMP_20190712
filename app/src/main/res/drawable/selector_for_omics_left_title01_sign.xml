@@ -1,0 +1,32 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true">
+        <shape android:shape="oval">
+
+            <!-- 填充色 -->
+            <solid android:color="@android:color/white" />
+            <stroke android:width="@dimen/dp_001" android:color="@color/theme"/>
+        </shape>
+    </item>
+    
+    
+     <item android:state_selected="true">
+        <shape android:shape="oval">
+
+            <!-- 填充色 -->
+            <solid android:color="@android:color/white" />
+            <stroke android:width="@dimen/dp_001" android:color="@color/theme"/>
+        </shape>
+    </item>
+    
+     
+      <item >
+        <shape android:shape="oval">
+
+            <!-- 填充色 -->
+            <solid android:color="@android:color/white" />
+            <stroke android:width="@dimen/dp_001" android:color="@color/bg01"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <!--分隔线-->
+    <View
+        android:id="@+id/v_line03_layout_item_expand_group_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_001"
+        android:background="@color/bg02"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_wrapper_01_item_expand_group_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_006">
+
+        <!--题数-->
+        <TextView
+            android:id="@+id/tv_question_num_layout_item_expand_group_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_for_grey_stroke_white_solid_corner"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_007"
+            android:paddingTop="@dimen/dp_004"
+            android:paddingRight="@dimen/dp_007"
+            android:paddingBottom="@dimen/dp_004"
+            android:text="385"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_006"
+            android:visibility="visible" />
+
+        <ImageView
+            style="@style/NextMenuIv"
+            android:layout_marginLeft="@dimen/dp_006" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label_group_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_line03_layout_item_expand_group_normal"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ll_wrapper_01_item_expand_group_normal"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:padding="@dimen/dp_006"
+        android:singleLine="false"
+        android:text="课前预习"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/sp_008" />
+
+    <RelativeLayout
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/label_group_normal"
+        android:layout_alignBottom="@id/label_group_normal"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/label_group_normal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_layout_item_expand_group_normal"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_for_omics_left_title01_sign" />
+
+        <View
+            android:id="@+id/v_line01_layout_item_expand_group_normal"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/iv_layout_item_expand_group_normal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/bg01" />
+
+        <View
+            android:id="@+id/v_line02_layout_item_expand_group_normal"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_layout_item_expand_group_normal"
+            android:layout_centerHorizontal="true"
+            android:background="@color/bg01"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

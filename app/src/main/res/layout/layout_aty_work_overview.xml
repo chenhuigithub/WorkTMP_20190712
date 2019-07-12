@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg02"
+    android:orientation="vertical"
+    tools:context=".aty.MainActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_wrapper_title_layout_aty_work_overview"
+        style="@style/TitleBg">
+
+        <include
+            android:id="@+id/in_go_back_menu_layout_aty_work_overview"
+            layout="@layout/layout_v_go_back_menu" />
+
+        <include
+            android:id="@+id/in_title_layout_aty_work_overview"
+            layout="@layout/layout_v_title_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_005"
+            android:text="@string/more"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/sp_007" />
+    </RelativeLayout>
+
+    <!--作业名称-->
+    <RelativeLayout
+        android:id="@+id/rl_wrapper_name_layout_aty_work_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_title_layout_aty_work_overview"
+        android:layout_marginTop="@dimen/dp_005"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_lbl_work_name_layout_aty_work_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:text="@string/work_name"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_008" />
+
+        <TextView
+            android:id="@+id/tv_work_name_layout_aty_work_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:layout_toRightOf="@id/tv_lbl_work_name_layout_aty_work_overview"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dp_006"
+            android:text="《沁园春-长沙》课后练习 >"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_007" />
+    </RelativeLayout>
+
+    <!--截止时间-->
+    <RelativeLayout
+        android:id="@+id/rl_wrapper_deadline_layout_aty_work_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_name_layout_aty_work_overview"
+        android:layout_marginTop="@dimen/dp_001"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_lbl_deadline_layout_aty_work_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:text="@string/deadline"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_008" />
+
+        <TextView
+            android:id="@+id/tv_deadline_layout_aty_work_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_lbl_deadline_layout_aty_work_overview"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dp_006"
+            android:text="2019-05-21 >"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_007" />
+    </RelativeLayout>
+
+    <!--班级-->
+    <RelativeLayout
+        android:id="@+id/rl_wrapper_class_layout_aty_work_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_deadline_layout_aty_work_overview"
+        android:layout_marginTop="@dimen/dp_005"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_lbl_class_layout_aty_work_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:text="@string/classes"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_008" />
+
+        <!--切换班级-->
+        <TextView
+            android:id="@+id/tv_switch_class_layout_aty_work_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_006"
+            android:text="@string/classes"
+            android:textColor="@color/orange01"
+            android:textSize="@dimen/sp_008" />
+
+        <TextView
+            android:id="@+id/tv_class_layout_aty_work_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:layout_marginRight="@dimen/dp_006"
+            android:layout_toLeftOf="@id/tv_switch_class_layout_aty_work_overview"
+            android:layout_toRightOf="@id/tv_lbl_class_layout_aty_work_overview"
+            android:gravity="center_vertical|right"
+            android:text="高一（2）班"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_008" />
+    </RelativeLayout>
+
+    <!--正确率-->
+    <LinearLayout
+        android:id="@+id/rl_wrapper_correct_rate_layout_aty_work_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_class_layout_aty_work_overview"
+        android:layout_marginTop="@dimen/dp_001"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_lbl_correctness_rate_layout_aty_work_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:text="@string/correctness_rate"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_008" />
+
+        <!--正确率 数值-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_005"
+            android:layout_toRightOf="@id/tv_lbl_correctness_rate_layout_aty_work_overview">
+
+            <TextView
+                android:id="@+id/tv_correctness_rate_layout_aty_work_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/sp_008" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/sp_006" />
+        </LinearLayout>
+
+        <!--答对题数对比总题数-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_lbl_correctness_rate_layout_aty_work_overview"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dp_006">
+
+            <TextView
+                android:id="@+id/tv_correct_answers_num_layout_aty_work_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45/"
+                android:textColor="@color/orange01"
+                android:textSize="@dimen/sp_008" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/sp_008" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_003"
+                android:text=">"
+                android:textColor="@color/color_text_content"
+                android:textSize="@dimen/sp_007" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--答题卡-->
+    <LinearLayout
+        android:id="@+id/rl_wrapper_answer_card_layout_aty_work_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_correct_rate_layout_aty_work_overview"
+        android:layout_marginTop="@dimen/dp_005"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_006">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_card"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_008" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_006"
+            android:text="(共"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_007" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_003"
+            android:text="20"
+            android:textColor="@color/theme"
+            android:textSize="@dimen/sp_007" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_003"
+            android:text="题)"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_007" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_003"
+            android:text="注:"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_007" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_008"
+            android:layout_height="@dimen/dp_008"
+            android:layout_marginLeft="@dimen/dp_003"
+            android:background="@drawable/selector_for_orange_round_ball" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_003"
+            android:text="为学生标记疑难问题)"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_007" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_wrapper_answer_card_layout_aty_work_overview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_wrapper_01_layout_aty_work_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_002"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_008"
+                android:paddingBottom="@dimen/dp_008"
+                android:paddingRight="@dimen/dp_006"
+                android:paddingLeft="@dimen/dp_006">
+
+                <TextView
+                    style="@style/SingBg01"
+                    android:text="单选" />
+
+                <com.example.worktmp.view.CustomGridView
+                    android:id="@+id/gdv_single_election_layout_aty_work_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_006"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="@dimen/dp_016"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dp_010"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="@dimen/dp_004" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wrapper_02_layout_aty_work_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_wrapper_01_layout_aty_work_overview"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_008"
+                android:paddingBottom="@dimen/dp_008"
+                android:paddingRight="@dimen/dp_006"
+                android:paddingLeft="@dimen/dp_006">
+
+                <TextView
+                    style="@style/SingBg01"
+                    android:text="多选" />
+
+                <com.example.worktmp.view.CustomGridView
+                    android:id="@+id/gdv_multiple_election_layout_aty_work_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_006"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="@dimen/dp_016"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dp_010"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="@dimen/dp_004" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_wrapper_03_layout_aty_work_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_wrapper_02_layout_aty_work_overview"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_008"
+                android:paddingBottom="@dimen/dp_008"
+                android:paddingRight="@dimen/dp_006"
+                android:paddingLeft="@dimen/dp_006">
+
+                <TextView
+                    style="@style/SingBg01"
+                    android:text="解答" />
+
+                <com.example.worktmp.view.CustomGridView
+                    android:id="@+id/gdv_answer_layout_aty_work_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_006"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="@dimen/dp_016"
+                    android:fadingEdge="none"
+                    android:fadingEdgeLength="0dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/dp_010"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="@dimen/dp_004" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:padding="@dimen/dp_006"
+    tools:context=".aty.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_wrapper_01_layout_v_class_item"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_004"
+            android:text="高一(2)班"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/sp_008" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_004"
+            android:text="当前得分率：70%"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_006" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wrapper_02_layout_v_class_item"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_004"
+            android:text="已提交：50/50"
+            android:textColor="@color/color_text_content"
+            android:textSize="@dimen/sp_006" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_004"
+            android:background="@drawable/selector_theme_rectangle_corner"
+            android:paddingLeft="@dimen/dp_006"
+            android:paddingTop="@dimen/dp_004"
+            android:paddingRight="@dimen/dp_006"
+            android:paddingBottom="@dimen/dp_004"
+            android:text="待批改(47)"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_006" />
+
+    </LinearLayout>
+
+</LinearLayout>

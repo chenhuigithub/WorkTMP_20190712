@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg02"
+    android:orientation="vertical"
+    tools:context=".aty.MainActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_wrapper_title_layout_aty_choose_question_bank"
+        style="@style/TitleBg">
+
+        <include
+            android:id="@+id/in_go_back_menu_layout_aty_choose_question_bank"
+            layout="@layout/layout_v_go_back_menu" />
+
+        <include
+            android:id="@+id/in_title_layout_aty_choose_question_bank"
+            layout="@layout/layout_v_title_text" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gdv_bank_type_layout_aty_choose_question_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_title_layout_aty_choose_question_bank"
+        android:layout_marginLeft="@dimen/dp_010"
+        android:layout_marginTop="@dimen/dp_008"
+        android:layout_marginRight="@dimen/dp_010"
+        android:layout_marginBottom="@dimen/dp_008"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="@dimen/dp_016"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/dp_006"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/dp_006" />
+</RelativeLayout>

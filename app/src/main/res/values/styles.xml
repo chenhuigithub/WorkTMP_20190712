@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 自定义对话框样式的dialog -->
+    <!--<style name="Dialog" parent="android:style/Theme.Dialog">-->
+    <!--<item name="android:background">#00000000</item>-->
+    <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--<item name="android:windowIsFloating">true</item>-->
+    <!--</style>-->
+
+    <!-- 自定义dialog样式 for loading -->
+    <!--<style name="DialogForLoading" parent="@android:style/Theme.Dialog">-->
+    <!--<item name="android:windowFrame">@null</item>-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--<item name="android:windowBackground">@drawable/shape_for_custom_dialog_for_loading</item>-->
+    <!--<item name="android:windowIsFloating">true</item>-->
+    <!--<item name="android:windowContentOverlay">@null</item>-->
+    <!--</style>-->
+
+    <!--<style name="style_custom_dialog" parent="@android:style/Theme.Dialog">-->
+    <!--<item name="@android:windowEnterAnimation">@anim/mylogout_dialog_enter</item>-->
+    <!--<item name="@android:windowExitAnimation">@anim/mylogout_dialog_exit</item>-->
+    <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--&lt;!&ndash; 设置window背景透明，也就是去边框 &ndash;&gt;-->
+    <!--<item name="android:background">#ffffff</item>-->
+    <!--&lt;!&ndash; 设置自定义布局的背景透明 &ndash;&gt;-->
+    <!--<item name="android:windowNoTitle">false</item>-->
+    <!--</style>-->
+
+
+    <!-- Dialog样式-->
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <!--标题栏背景样式-->
+    <style name="TitleBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_007</item>
+        <item name="android:background">@color/bg01</item>
+    </style>
+
+    <!--标题栏返回按钮样式-->
+    <style name="TitleGoBackMenuBg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">@dimen/dp_005</item>
+    </style>
+
+    <!--标题栏返回按钮内的图标样式-->
+    <style name="TitleGoBackMenuIv">
+        <item name="android:layout_width">@dimen/dp_008</item>
+        <item name="android:layout_height">@dimen/dp_008</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/arrow_left</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+
+    <!--下一个 指示图标图标样式-->
+    <style name="NextMenuIv">
+        <item name="android:layout_width">@dimen/dp_005</item>
+        <item name="android:layout_height">@dimen/dp_007</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/arrow_right</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!--标志：灰色实心矩形-->
+    <style name="SingBg01" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dp_002</item>
+        <item name="android:paddingBottom">@dimen/dp_002</item>
+        <item name="android:paddingLeft">@dimen/dp_006</item>
+        <item name="android:paddingRight">@dimen/dp_006</item>
+        <item name="android:textSize">@dimen/sp_006</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/bg05</item>
+    </style>
+</resources>

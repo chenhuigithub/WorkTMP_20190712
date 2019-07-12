@@ -1,0 +1,6 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_wrapper_back_layout_aty_choose_question_bank"
+    style="@style/TitleGoBackMenuBg">
+
+    <ImageView style="@style/TitleGoBackMenuIv" />
+</RelativeLayout>

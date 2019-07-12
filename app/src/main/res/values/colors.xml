@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <!-- 根据文字内容分工的等级颜色 -->
+    <color name="color_text_title">#333333</color>
+    <color name="color_text_content">#666666</color>
+    <color name="color_text_additional">#999999</color>
+
+    <!--主题色-->
+    <color name="theme">#00a0e9</color>
+
+    <!--背景色-->
+    <color name="bg01">#FAFAFA</color>
+    <color name="bg02">#EEEEEE</color>
+    <color name="bg03">#FEFEFE</color>
+    <color name="bg04">#F9FAFA</color>
+    <color name="bg05">#D3D3D3</color>
+    <color name="bg06">#F5F5F7</color>
+    <color name="bg07">#E3E3E3</color>
+
+
+    <color name="grey01">#CCCCCC</color>
+    <color name="orange01">#F39804</color>
+
+
+
+</resources>

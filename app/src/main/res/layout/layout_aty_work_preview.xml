@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg02"
+    android:clickable="false"
+    tools:context=".aty.MainActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_title_layout_aty_work_preview"
+        style="@style/TitleBg">
+
+        <include
+            android:id="@+id/in_go_back_menu_layout_aty_work_preview"
+            layout="@layout/layout_v_go_back_menu" />
+
+        <include
+            android:id="@+id/in_title_layout_aty_work_preview"
+            layout="@layout/layout_v_title_text" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line01_layout_aty_work_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_001"
+        android:layout_below="@id/rl_title_layout_aty_work_preview"
+        android:background="@color/bg07" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title01_layout_aty_work_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_line01_layout_aty_work_preview"
+        android:layout_marginTop="@dimen/dp_006"
+        android:background="@android:color/white"
+        android:padding="@dimen/dp_005">
+
+        <TextView
+            android:id="@+id/tv_empty_layout_aty_work_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_for_grey_stroke_white_solid_corner01"
+            android:paddingLeft="@dimen/dp_008"
+            android:clickable="true"
+            android:paddingTop="@dimen/dp_004"
+            android:paddingRight="@dimen/dp_008"
+            android:paddingBottom="@dimen/dp_004"
+            android:text="@string/empty"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_007" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dp_006"
+            android:text="1.《沁园春·长沙》"
+            android:textColor="@color/color_text_additional"
+            android:textSize="@dimen/sp_009" />
+    </RelativeLayout>
+
+
+    <!--底部菜单栏-->
+    <LinearLayout
+        android:id="@+id/ll_wrapper_bottom_menu_layout_aty_work_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_007">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_deposit_draft_layout_aty_work_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_for_grey_stroke_grey_solid_corner"
+                android:paddingLeft="@dimen/dp_009"
+                android:paddingTop="@dimen/dp_005"
+                android:paddingRight="@dimen/dp_009"
+                android:paddingBottom="@dimen/dp_005"
+                android:text="存草稿"
+                android:textColor="@color/color_text_additional"
+                android:textSize="@dimen/sp_008" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_arrange_work_layout_aty_work_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_for_theme_solid_corner"
+                android:paddingLeft="@dimen/dp_009"
+                android:paddingTop="@dimen/dp_005"
+                android:paddingRight="@dimen/dp_009"
+                android:paddingBottom="@dimen/dp_005"
+                android:text="布置作业"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_008" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line02_layout_aty_work_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_001"
+        android:layout_above="@id/ll_wrapper_bottom_menu_layout_aty_work_preview"
+        android:background="@color/bg07" />
+
+    <ListView
+        android:id="@+id/lv_work_aty_work_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_wrapper_bottom_menu_layout_aty_work_preview"
+        android:layout_below="@id/rl_title01_layout_aty_work_preview"
+        android:layout_marginTop="@dimen/dp_002"
+        android:background="@android:color/white"
+        android:divider="@color/bg02"
+        android:dividerHeight="@dimen/dp_001" />
+
+
+</RelativeLayout>

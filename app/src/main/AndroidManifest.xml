@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.worktmp">
+
+    <application
+        android:name=".application.CustomApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".aty.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--作业概览-->
+        <activity
+            android:name=".aty.WorkOverviewAty"
+            android:hardwareAccelerated="true"></activity>
+
+        <!--选择题库-->
+        <activity
+            android:name=".aty.ChooseQuestionBankAty"
+            android:hardwareAccelerated="true"></activity>
+
+        <!--云题库-->
+        <activity
+            android:name=".aty.CloudQuestionBankAty"
+            android:hardwareAccelerated="true"></activity>
+
+        <!--作业预览-->
+        <activity
+            android:name=".aty.WorkPreviewAty"
+            android:hardwareAccelerated="true"></activity>
+    </application>
+
+</manifest>

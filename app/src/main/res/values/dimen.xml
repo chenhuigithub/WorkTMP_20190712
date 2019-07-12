@@ -1,0 +1,52 @@
+<resources>
+ <!-- 文字大小，sp单位 -->
+    <dimen name="sp_001">2sp</dimen>
+    <dimen name="sp_002">4sp</dimen>
+    <dimen name="sp_003">6sp</dimen>
+    <dimen name="sp_004">8sp</dimen>
+    <dimen name="sp_005">10sp</dimen>
+    <dimen name="sp_006">12sp</dimen>
+    <dimen name="sp_007">14sp</dimen>
+    <dimen name="sp_008">16sp</dimen>
+    <dimen name="sp_009">18sp</dimen>
+    <dimen name="sp_010">20sp</dimen>
+    <dimen name="sp_011">22sp</dimen>
+    <dimen name="sp_012">24sp</dimen>
+    <dimen name="sp_013">26sp</dimen>
+    <dimen name="sp_014">28sp</dimen>
+    <dimen name="sp_015">30sp</dimen>
+    <dimen name="sp_016">32sp</dimen>
+    <dimen name="sp_017">34sp</dimen>
+    <dimen name="sp_018">36sp</dimen>
+    <dimen name="sp_019">38sp</dimen>
+    <dimen name="sp_020">40sp</dimen>
+    <dimen name="sp_021">42sp</dimen>
+    <dimen name="sp_022">44sp</dimen>
+    <dimen name="sp_023">46sp</dimen>
+    <dimen name="sp_024">48sp</dimen>
+    <dimen name="sp_025">50sp</dimen>
+
+
+      <!-- 长度、间距，dp单位 -->
+        <dimen name="dp_001">1dp</dimen>
+        <dimen name="dp_002">2dp</dimen>
+        <dimen name="dp_003">3dp</dimen>
+        <dimen name="dp_004">4dp</dimen>
+        <dimen name="dp_005">5dp</dimen>
+        <dimen name="dp_006">8dp</dimen>
+        <dimen name="dp_007">10dp</dimen>
+        <dimen name="dp_008">12dp</dimen>
+        <dimen name="dp_009">15dp</dimen>
+        <dimen name="dp_010">18dp</dimen>
+        <dimen name="dp_011">20dp</dimen>
+        <dimen name="dp_012">25dp</dimen>
+        <dimen name="dp_013">30dp</dimen>
+        <dimen name="dp_014">35dp</dimen>
+        <dimen name="dp_015">40dp</dimen>
+        <dimen name="dp_016">45dp</dimen>
+        <dimen name="dp_017">50dp</dimen>
+        <dimen name="dp_018">55dp</dimen>
+        <dimen name="dp_019">60dp</dimen>
+        <dimen name="dp_020">65dp</dimen>
+        <dimen name="dp_021">70dp</dimen>
+</resources>

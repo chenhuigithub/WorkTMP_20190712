@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg02"
+    tools:context=".aty.MainActivity">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_wrapper_title_layout_fg_on_line_work"
+        android:clickable="false"
+        style="@style/TitleBg">
+
+        <include
+            android:id="@+id/in_title_layout_v_class_item"
+            layout="@layout/layout_v_title_text" />
+
+        <TextView
+            android:id="@+id/tv_arrange_work_layout_fg_on_line_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="@string/arrange_work"
+            android:textColor="@color/theme"
+            android:textSize="@dimen/sp_009" />
+    </RelativeLayout>
+
+    <!--筛选条件-->
+    <LinearLayout
+        android:id="@+id/ll_wrapper_01_layout_fg_on_line_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_wrapper_title_layout_fg_on_line_work"
+        android:layout_marginTop="@dimen/dp_005"
+        android:background="@color/bg03"
+        android:padding="@dimen/dp_005">
+
+        <!--全部状态-->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.3"
+            android:gravity="center"
+            android:padding="@dimen/dp_005">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部状态"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_007" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <!--班级-->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.3"
+            android:gravity="center"
+            android:padding="@dimen/dp_005">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所有班级"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_007" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <!--时间-->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.3"
+            android:gravity="center"
+            android:padding="@dimen/dp_005">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="六月"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_007" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ic_launcher"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_wrapper_01_layout_fg_on_line_work"
+        android:layout_marginTop="@dimen/dp_006"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/lv_wrapper_content_layout_fg_on_line_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/bg02"
+            android:dividerHeight="@dimen/dp_006"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="#00000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
